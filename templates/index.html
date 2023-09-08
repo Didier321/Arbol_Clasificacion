@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head> 
+  <title>Prediccion </title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title1" >Prediccion</h1>
+    <form action="/predict" method="post">
+
+      <label for="SepalLengthCm">Nitrogeno en el suelo</label>
+      <input name="N" id="N" required></input>
+      <br><br>
+
+      <label for="SepalWidthCm">Contenido de fosforo en el suelo</label>
+      <input name="P" id="P" required></input>
+      <br><br>
+
+      <label for="PetalLengthCm">Contenido de potasio en el suelo</label>
+      <input name="K" id="K" required></input>
+      <br><br>
+
+      <label for="PetalWidthCm">Temperatura en grados Celsius</label>
+      <input name="temperatura" id="temperatura" required></input>
+      <br><br>
+
+      <label for="PetalWidthCm">Humedad relativa en %</label>
+      <input name="humedad" id="humedad" required></input>
+      <br><br>
+
+      <label for="PetalWidthCm">Valor de ph del suelo</label>
+      <input name="ph" id="ph" required></input>
+      <br><br>
+
+      <label for="PetalWidthCm">Precipitacion en mm</label>
+      <input name="precipitacion" id="precipitacion" required></input>
+      <br><br>
+
+      <button type="submit">Realizar prediccion</button>
+    </form>
+  </div>
+</body>
+</html>
